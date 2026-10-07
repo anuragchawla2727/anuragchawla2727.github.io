@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sam LLP | Data analytics, machine learning and AI automation, Punjab</title>
+<meta name="description" content="Sam LLP builds dashboards, prediction models and AI automations for small and mid-sized businesses in Punjab. Based in Ludhiana.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%92%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f9;--panel:#fff;--ink:#101828;--mute:#566074;--rule:#d3dbe5;--ind:#27358a;--gold:#f2a900;--chip:#e6eaf5;--grid:rgba(39,53,138,.07)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1424;--panel:#161d33;--ink:#eef1f8;--mute:#a3adc4;--rule:#2b3552;--ind:#9fb0ff;--gold:#f6c343;--chip:#222c4a;--grid:rgba(159,176,255,.07)}}
+:root[data-theme=dark]{--bg:#0e1424;--panel:#161d33;--ink:#eef1f8;--mute:#a3adc4;--rule:#2b3552;--ind:#9fb0ff;--gold:#f6c343;--chip:#222c4a;--grid:rgba(159,176,255,.07)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px);background-size:100% 32px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--ind)}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;flex-wrap:wrap}
+.brand{font:700 20px "Bricolage Grotesque",sans-serif;text-decoration:none;color:var(--ink)}
+nav a{margin-left:18px;text-decoration:none;color:var(--mute);font-weight:600}
+nav a:hover,nav a:focus-visible{color:var(--ind)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{padding:48px 0 36px;display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(34px,5.4vw,56px);font-weight:700;letter-spacing:-.02em}
+.hero p{color:var(--mute);max-width:52ch;margin:16px 0 24px}
+.btn{display:inline-block;padding:12px 20px;border-radius:6px;background:var(--ind);color:var(--bg);font-weight:600;text-decoration:none;border:2px solid var(--ind)}
+.btn.alt{background:transparent;color:var(--ind);margin-left:8px}
+.ledger{background:var(--panel);border:1px solid var(--rule);border-left:6px solid var(--gold);border-radius:4px;padding:6px 0}
+.ledger div{display:flex;justify-content:space-between;gap:14px;padding:11px 18px;border-bottom:1px dashed var(--rule)}
+.ledger div:last-child{border:0}
+.ledger span:first-child{font-weight:600}
+.ledger span:last-child{color:var(--ind);text-align:right}
+section{padding:44px 0}
+section>.wrap>h2{font-size:clamp(26px,3.6vw,36px);margin-bottom:8px}
+.lead{color:var(--mute);max-width:60ch;margin:0 0 26px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.svc{background:var(--panel);border:1px solid var(--rule);padding:20px;border-radius:4px}
+.svc h3{font-size:19px;margin-bottom:6px}
+.svc p{margin:0;color:var(--mute);font-size:16px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tabs button{font:600 15px "Source Sans 3",sans-serif;padding:8px 14px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--ind);color:var(--bg);border-color:var(--ind)}
+.proj{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card[hidden]{display:none}
+.cat{font-size:14px;font-weight:600;color:var(--mute)}
+.card h3{font-size:21px}
+.card p{margin:0;font-size:16px}
+.card .res{border-left:3px solid var(--gold);padding-left:10px;color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.chips span{background:var(--chip);padding:2px 9px;border-radius:4px;font-size:14px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.steps li{counter-increment:s;border-top:3px solid var(--ind);padding-top:10px}
+.steps li::before{content:"Step " counter(s);display:block;font-weight:600;color:var(--mute);font-size:14px}
+.steps b{font-family:"Bricolage Grotesque",sans-serif;font-size:19px}
+.team{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.team .svc p+p{margin-top:8px}
+.contact{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:28px}
+.contact ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:6px}
+footer{padding:28px 0 40px;color:var(--mute);font-size:15px;border-top:1px solid var(--rule)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}nav a{margin:0 14px 0 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="#top">Sam LLP</a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#team">Team</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>Your sales, stock and customer records already hold the answers.</h1>
+    <p>We are a two-person data and AI team in Punjab. We turn the numbers you already keep into dashboards, predictions and automated follow-ups that a shop, gym or clinic owner can use the same week.</p>
+    <a class="btn" href="#contact">Book a free data check</a><a class="btn alt" href="#work">See our work</a>
+  </div>
+  <div class="ledger" aria-label="Questions we help answer">
+    <div><span>Which members will stop coming?</span><span>Churn model</span></div>
+    <div><span>What should I stock next season?</span><span>Forecasting</span></div>
+    <div><span>Where is my money going?</span><span>Dashboard</span></div>
+    <div><span>Who needs a reminder today?</span><span>Automation</span></div>
+  </div>
+</div>
+
+<section id="services"><div class="wrap">
+  <h2>What we do</h2>
+  <p class="lead">Four services. Most clients start with the first one and add the others as they see results.</p>
+  <div class="grid">
+    <div class="svc"><h3>Data cleanup and dashboards</h3><p>We gather records from Excel, Tally exports or notebooks, clean them, and build a clear sales and customer view in Power BI or similar tools.</p></div>
+    <div class="svc"><h3>Prediction models</h3><p>Customer churn, purchase intent and demand forecasting, built on your own data and explained in plain language.</p></div>
+    <div class="svc"><h3>AI and workflow automation</h3><p>Email, CRM and messaging flows that sort enquiries, answer common questions, score leads and hand difficult cases to a person.</p></div>
+    <div class="svc"><h3>Monthly check-ups</h3><p>Models and automations drift over time. We review them each month and send a short note on what changed and what to do next.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Selected work</h2>
+  <p class="lead">Projects from our training, internships and independent builds. We describe what each one does and which results we measured. We have not listed client names or revenue claims.</p>
+  <div class="tabs" role="group" aria-label="Filter projects">
+    <button aria-pressed="true" data-f="all">All</button>
+    <button aria-pressed="false" data-f="da">Data analytics</button>
+    <button aria-pressed="false" data-f="ds">Data science</button>
+    <button aria-pressed="false" data-f="ai">AI engineering</button>
+    <button aria-pressed="false" data-f="au">AI automation</button>
+  </div>
+  <div class="proj">
+
+    <article class="card" data-c="da"><span class="cat">Data analytics</span><h3>Zomato Business Intelligence</h3>
+      <p>Takes messy restaurant and order data and turns it into a dashboard a manager can read. Twelve raw datasets were cleaned in MySQL, then explored with 26 SQL queries (CTEs and window functions), two reusable views and a 30-chart analysis.</p>
+      <p class="res">Delivered a 6-page Power BI dashboard and a churn model (ROC-AUC 0.76) that flags customers likely to leave.</p>
+      <div class="chips"><span>MySQL</span><span>SQL</span><span>Power BI</span><span>EDA</span></div></article>
+
+    <article class="card" data-c="da"><span class="cat">Data analytics</span><h3>Patient Readmission Analysis</h3>
+      <p>Studies which patients return to hospital and why. We analysed over 100,000 diabetic patient records from 130 US hospitals using Python and advanced SQL, then built an interactive dashboard with KPIs and risk groups.</p>
+      <p class="res">Found readmission above 48% in patients aged 70 to 90, and 68.58% in the Very High Risk group.</p>
+      <div class="chips"><span>Python</span><span>MySQL</span><span>Power BI</span></div></article>
+
+    <article class="card" data-c="ds"><span class="cat">Data science, end to end</span><h3>Customer Churn Prediction (Banking)</h3>
+      <p>Predicts which bank customers are likely to leave so a team can contact them first. The model was tuned for recall because missing a leaving customer costs more than a false alarm. It runs behind a REST API with a simple web screen for non-technical users.</p>
+      <p class="res">About 91% recall on the test data.</p>
+      <div class="chips"><span>scikit-learn</span><span>FastAPI</span><span>Streamlit</span></div></article>
+
+    <article class="card" data-c="ds"><span class="cat">Data science, end to end</span><h3>E-commerce Purchase Intent</h3>
+      <p>Predicts which website visitors are likely to buy, and shows why using SHAP so the result can be trusted and acted on. The full pipeline is packaged with experiment tracking, Docker and automated tests.</p>
+      <div class="chips"><span>CatBoost</span><span>SHAP</span><span>MLflow</span><span>Docker</span><span>FastAPI</span></div></article>
+
+    <article class="card" data-c="ds"><span class="cat">Data science, end to end</span><h3>NHS Mental Health Data Analytics</h3>
+      <p>Internship work on large UK health datasets. We built an ETL pipeline that replaced a manual monthly upload, grouped patients with K-Means clustering, flagged unusual prescribing with Isolation Forest, and tested which risk factors were statistically significant.</p>
+      <p class="res">Pipeline handles 770,000+ rows. Isolation Forest flagged 318 of 6,360 records. The clustering is exploratory (silhouette 0.20).</p>
+      <div class="chips"><span>Python</span><span>ETL</span><span>K-Means</span><span>Isolation Forest</span><span>Hypothesis tests</span></div></article>
+
+    <article class="card" data-c="ai"><span class="cat">AI engineering</span><h3>AI Customer Support Agent</h3>
+      <p>Reads incoming support emails, works out the intent, drafts a reply from a company knowledge base, and passes low-confidence or sensitive cases to a person. It includes protections against prompt-injection, retry handling and a 36-query automated test suite to check answer quality.</p>
+      <div class="chips"><span>n8n</span><span>FastAPI</span><span>RAG</span><span>pgvector</span><span>PostgreSQL</span><span>Gmail API</span></div></article>
+
+    <article class="card" data-c="ai"><span class="cat">AI engineering</span><h3>Text Emotion Classification</h3>
+      <p>Trains and compares four neural network designs (RNN, GRU, Bidirectional GRU and LSTM) to recognise emotion in text, with a web front end to try it out.</p>
+      <div class="chips"><span>TensorFlow</span><span>Keras</span><span>NLP</span><span>JavaScript</span></div></article>
+
+    <article class="card" data-c="ai"><span class="cat">AI engineering</span><h3>Sentiment and Intent Modules</h3>
+      <p>Language-understanding components built for an AI-based mental health assistance system during an internship, covering data preparation, feature engineering and deployment as part of a cross-functional team.</p>
+      <div class="chips"><span>NLP</span><span>Python</span><span>Feature engineering</span></div></article>
+
+    <article class="card" data-c="au"><span class="cat">AI automation</span><h3>AI Content Automation Pipeline</h3>
+      <p>A four-stage workflow that finds trending topics, writes prompts, drafts blog content with an LLM and logs everything to a spreadsheet, with no manual steps in between. It runs in Docker.</p>
+      <div class="chips"><span>n8n</span><span>Gemini API</span><span>YouTube Data API</span><span>SerpAPI</span><span>Docker</span></div></article>
+
+    <article class="card" data-c="au"><span class="cat">AI automation</span><h3>MindCare Wellness AI Agent</h3>
+      <p>A conversational agent for a wellness clinic. It answers common patient questions from a knowledge base, captures appointment enquiries straight into Salesforce, scores each as Hot, Warm or Cold, and logs the conversation as a linked task. A live demo is available on request.</p>
+      <div class="chips"><span>Tars</span><span>Salesforce</span><span>Vector search</span><span>RAG</span></div></article>
+
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <h2>How a project runs</h2>
+  <p class="lead">Small and clear, so you know the cost and the result before you commit.</p>
+  <ol class="steps">
+    <li><b>Data check</b><br>A free call and a look at what records you have.</li>
+    <li><b>Small pilot</b><br>A quick trial on your own data, with a written scope and price.</li>
+    <li><b>Build</b><br>The dashboard, model or automation, set up in your tools.</li>
+    <li><b>Hand over and review</b><br>A plain-language walkthrough, then monthly check-ups.</li>
+  </ol>
+</div></section>
+
+<section id="team"><div class="wrap">
+  <h2>Who you work with</h2>
+  <div class="team">
+    <div class="svc"><h3>Anurag Chawla</h3><p>Ludhiana. Focus on AI automation and data science: n8n workflows, RAG systems, dashboards and deployed models.</p><p><a href="https://github.com/anuragchawla27">GitHub</a> · <a href="https://anuragchawla27.github.io/">Personal portfolio</a></p></div>
+    <div class="svc"><h3>Samar Markande</h3><p>Focus on machine learning and deep learning: model building, explainable AI, NLP and deployment with FastAPI, Docker and MLflow.</p><p><a href="https://github.com/samarmarkande007">GitHub</a> · <a href="https://www.linkedin.com/in/samar-markande">LinkedIn</a></p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <h2>Start with a free data check</h2>
+    <p class="lead" style="margin-bottom:0">Tell us what you sell, what you track today and what you wish you knew. We will reply with whether data can help and what a pilot would involve. Calls in English, Hindi or Punjabi.</p>
+    <ul>
+      <li>WhatsApp: <a href="https://wa.me/918264586042">+91 82645 86042</a></li>
+      <li>Email: <a href="mailto:anuragchawla7777@gmail.com">anuragchawla7777@gmail.com</a></li>
+      <li>Email: <a href="mailto:markandesamar007@gmail.com">markandesamar007@gmail.com</a></li>
+    </ul>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Sam LLP · Punjab, India. Projects shown come from internships, training and personal builds.</div></footer>
+</div>
+
+<script>
+document.querySelectorAll('.tabs button').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    var f=b.dataset.f;
+    document.querySelectorAll('.card').forEach(function(c){c.hidden=(f!=='all'&&c.dataset.c!==f)});
+  });
+});
+</script>
+</body>
+</html>
